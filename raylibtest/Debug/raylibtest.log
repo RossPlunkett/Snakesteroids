@@ -1,0 +1,41 @@
+﻿  raylibtest.cpp
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(75,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(77,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(77,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(78,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(78,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(86,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(86,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(86,58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(87,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(87,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(87,58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(93,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(100,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(100,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(101,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(101,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(103,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(103,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(103,50): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(104,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(104,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(104,50): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(108,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(109,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(196,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(200,54): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(200,97): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(203,61): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(205,61): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(216,85): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(216,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(237,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(283,85): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(283,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(283,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(286,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(292,64): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(292,52): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Ross\source\repos\raylibtest\raylibtest\raylibtest.cpp(292,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  raylibtest.vcxproj -> C:\Users\Ross\source\repos\raylibtest\Debug\raylibtest.exe
