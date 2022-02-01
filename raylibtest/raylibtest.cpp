@@ -1,11 +1,11 @@
 /*******************************************************************************************
 *
-*   raylib [core] example - Keyboard input
+*   Snakesteroids!
 *
-*   This example has been created using raylib 1.0 (www.raylib.com)
+*   Uses the C library Raylib
 *   raylib is licensed under an unmodified zlib/libpng license (View raylib.h for details)
 *
-*   Copyright (c) 2014 Ramon Santamaria (@raysan5)
+*   Snakesteroids game by Ross Plunkett
 *
 ********************************************************************************************/
 
@@ -21,54 +21,9 @@ int screenHeight = 1080;
 #include "Player.h"
 #include "PlayerEffects.h"
 
-#if defined(PLATFORM_DESKTOP)
-#define GLSL_VERSION            330
-#else   // PLATFORM_RPI, PLATFORM_ANDROID, PLATFORM_WEB
-#define GLSL_VERSION            100
-#endif
-
-#define MAX_POSTPRO_SHADERS         12
-
-typedef enum {
-    FX_GRAYSCALE = 0,
-    FX_POSTERIZATION,
-    FX_DREAM_VISION,
-    FX_PIXELIZER,
-    FX_CROSS_HATCHING,
-    FX_CROSS_STITCHING,
-    FX_PREDATOR_VIEW,
-    FX_SCANLINES,
-    FX_FISHEYE,
-    FX_SOBEL,
-    FX_BLOOM,
-    FX_BLUR,
-    //FX_FXAA
-} PostproShader;
-
-static const char* postproShaderText[] = {
-    "GRAYSCALE",
-    "POSTERIZATION",
-    "DREAM_VISION",
-    "PIXELIZER",
-    "CROSS_HATCHING",
-    "CROSS_STITCHING",
-    "PREDATOR_VIEW",
-    "SCANLINES",
-    "FISHEYE",
-    "SOBEL",
-    "BLOOM",
-    "BLUR",
-    //"FXAA"
-};
-
 using std::cout;
 using std::vector;
 using std::endl;
-
-
-
-
-
 
 
 void randomize_asteroids(vector<Asteroid>& asteroids, Vector2 playerPos) {
@@ -125,34 +80,11 @@ int main(void)
 
     Texture2D pic = LoadTexture("noteball.png");
 
-    // Load all postpro shaders
-    // NOTE 1: All postpro shader use the base vertex shader (DEFAULT_VERTEX_SHADER)
-    // NOTE 2: We load the correct shader depending on GLSL version
-    Shader shaders[MAX_POSTPRO_SHADERS] = { 0 };
-
-    // NOTE: Defining 0 (NULL) for vertex shader forces usage of internal default vertex shader
-    shaders[FX_GRAYSCALE] = LoadShader(0, TextFormat("resources/shaders/glsl%i/grayscale.fs", GLSL_VERSION));
-    shaders[FX_POSTERIZATION] = LoadShader(0, TextFormat("resources/shaders/glsl%i/posterization.fs", GLSL_VERSION));
-    shaders[FX_DREAM_VISION] = LoadShader(0, TextFormat("resources/shaders/glsl%i/dream_vision.fs", GLSL_VERSION));
-    shaders[FX_PIXELIZER] = LoadShader(0, TextFormat("resources/shaders/glsl%i/pixelizer.fs", GLSL_VERSION));
-    shaders[FX_CROSS_HATCHING] = LoadShader(0, TextFormat("resources/shaders/glsl%i/cross_hatching.fs", GLSL_VERSION));
-    shaders[FX_CROSS_STITCHING] = LoadShader(0, TextFormat("resources/shaders/glsl%i/cross_stitching.fs", GLSL_VERSION));
-    shaders[FX_PREDATOR_VIEW] = LoadShader(0, TextFormat("resources/shaders/glsl%i/predator.fs", GLSL_VERSION));
-    shaders[FX_SCANLINES] = LoadShader(0, TextFormat("resources/shaders/glsl%i/scanlines.fs", GLSL_VERSION));
-    shaders[FX_FISHEYE] = LoadShader(0, TextFormat("resources/shaders/glsl%i/fisheye.fs", GLSL_VERSION));
-    shaders[FX_SOBEL] = LoadShader(0, TextFormat("resources/shaders/glsl%i/sobel.fs", GLSL_VERSION));
-    shaders[FX_BLOOM] = LoadShader(0, TextFormat("resources/shaders/glsl%i/bloom.fs", GLSL_VERSION));
-    shaders[FX_BLUR] = LoadShader(0, TextFormat("resources/shaders/glsl%i/blur.fs", GLSL_VERSION));
-
-    int currentShader = FX_GRAYSCALE;
-
     Player Player1;
     Player1.pos = { (float)screenWidth / 2, (float)screenHeight / 2 };
     Player* p1;
     p1 = &Player1;
     PlayerEffects PE1(p1);
-
-
 
 
     vector<Asteroid> balls;
@@ -285,23 +217,17 @@ int main(void)
 
         DrawCircleV(Player1.pos, Player1.r, GREEN);
 
-        //BeginShaderMode(shaders[currentShader]);
-
         int t_asteroids = balls.size();
         for (int i = 0; i < t_asteroids; i++) {
             DrawCircle(balls[i].pos.x, balls[i].pos.y, balls[i].r, balls[i].color);
             //DrawTexture(pic, balls[i].pos.x, balls[i].pos.y, RAYWHITE);
         }
-        //EndShaderMode();
         DrawFPS(10, 90);
 
 
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
-
-    // unload shaders
-    for (int i = 0; i < MAX_POSTPRO_SHADERS; i++) UnloadShader(shaders[i]);
 
     // De-Initialization
     //--------------------------------------------------------------------------------------
